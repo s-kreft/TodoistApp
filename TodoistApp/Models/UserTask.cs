@@ -2,8 +2,8 @@
 {
     public class UserTask
     {
-        private int _id;
-        private string _taskDescription;
-        private DateTimeOffset _taskCoplitionDay;
+        public int Id { get; set; }
+        public string TaskDescription { get; set; }
+        public DateTimeOffset TaskComplitionDay { get; set; }
     }
 }
