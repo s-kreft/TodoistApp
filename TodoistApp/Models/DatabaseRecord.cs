@@ -1,13 +1,17 @@
 ﻿namespace TodoistApp.Models
 {
-    public class UserTask
+    public class DatabaseRecord
     {
+        public int Id { get; set; }
         private string _taskDescription { get; set; }
         private DateOnly _taskComplitionDay { get; set; }
 
-        public UserTask(UserInput userInput)
+        public DatabaseRecord(UserInput userInput)
         {
             _taskDescription = userInput._taskDescription;
+            _taskComplitionDay = userInput._taskComplitionDay;
         }
+
+
     }
 }

@@ -4,6 +4,6 @@ namespace TodoistApp.Services
 {
     public interface ITodoistAppService
     {
-        Task<List<UserTask>> SaveTaskFromUser(UserTask userTask);
+        Task<List<UserTask>> SaveTaskFromUser(UserInput userInput);
     }
 }

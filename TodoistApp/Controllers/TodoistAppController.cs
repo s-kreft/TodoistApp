@@ -17,9 +17,9 @@ namespace TodoistApp.Controllers
 
         [HttpPut]
         [Route("/put")]
-        public async Task<ActionResult<List<UserTask>>> putUserTask([FromBody]UserTask userTask)
+        public async Task<ActionResult<List<UserTask>>> putUserTask([FromBody]UserInput userInput)
         {
-            return await _todoistAppService.GetTaskFromUser(userTask);
+            return await _todoistAppService.GetTaskFromUser(userInput);
         }
     }
 }
